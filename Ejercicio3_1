@@ -1,0 +1,67 @@
+/*Usar if-else if-else
+
+Crea un programa que convierta una calificación numérica (0-100) en letra:
+- 90-100: A
+- 80-89: B
+- 70-79: C
+- 60-69: D
+- 0-59: F
+
+También debe indicar si el estudiante aprobó (≥ 70) o reprobó.*/
+
+import java.util.Scanner;
+
+public class Ejercicio3_1 {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Escribir la nota (0-100): ");
+        int calificacion = scanner.nextInt();
+        String letra;
+        boolean aprobado;
+
+        if (calificacion >= 90 && calificacion <= 100)
+        {
+            letra = "A";
+        } 
+
+        else if (calificacion >= 80 && calificacion < 90) 
+        {
+            letra = "B";
+        } 
+
+        else if (calificacion >= 70 && calificacion < 80) 
+        {
+            letra = "C";
+        } 
+
+        else if (calificacion >= 60 && calificacion < 70) 
+        {
+            letra = "D";
+        } 
+
+        else if (calificacion >= 0 && calificacion < 60) 
+        {
+            letra = "F";
+        } 
+
+        else 
+        {
+            System.out.println("Nota Fuera de rango.");
+            scanner.close();
+            return;
+        }
+
+        aprobado = calificacion >= 70;
+
+        System.out.println("Nota en letra: " + letra);
+        if (aprobado) {
+            System.out.println("El estudiante paso.");
+        } else {
+            System.out.println("El estudiante se quemo.");
+        }
+
+        scanner.close();
+    }
+}

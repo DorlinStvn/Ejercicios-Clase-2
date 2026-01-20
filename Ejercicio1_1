@@ -1,0 +1,13 @@
+/*Crea una clase que imprima tu nombre, matrícula y carrera en líneas separadas.*/
+
+public class Ejercicio1_1 {
+
+public static void main(String[] args) {
+
+
+    
+        System.out.println("Dorlin Steven Camacho Castro\n");
+        System.out.println("Matricula:\n 1000-4372\n");
+        System.out.println("Carrera:\n Ingenieria en Sistemas Computacionales" );
+    }
+}

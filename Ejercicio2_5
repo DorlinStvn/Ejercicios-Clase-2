@@ -1,0 +1,25 @@
+/*Entender conversiones de tipo
+
+Demuestra la diferencia entre:
+- Conversión implícita (int → double)
+- Conversión explícita (double → int)
+
+Muestra los valores antes y después de cada conversión. */
+
+public class Ejercicio2_5 {
+
+    public static void main(String[] args) {
+        
+       //Implicita
+        int ValorInt = 10;
+        double Valordouble = Valordouble; 
+        System.out.println("Valor entero: " + ValorInt);
+        System.out.println("Conversion a double (implicito): " + Valordouble);
+        
+       //Explicita
+        double ValorDouble2 = 5.50;
+        int ValorInt2 = (int) ValorDouble2; 
+        System.out.println("Valor double: " + ValorDouble2);
+        System.out.println("Conversion a int (explicito): " + ValorInt2);
+    }
+}

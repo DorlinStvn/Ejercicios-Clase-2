@@ -1,0 +1,20 @@
+/*Escribe un programa simple y documéntalo usando:
+- Comentarios de una línea (//)
+- Comentarios de múltiples líneas (/* * /)
+- Comentarios de documentación (/** * /)*/
+
+public class Ejercicio1_2 {
+
+public static void main(String[] args) {
+    /*PROGRAMA DE
+    SUMA BASICO*/
+    
+
+    int A = 10; //VARIABLR A
+    INT B = 5; //VARIABLE B
+    int C = 0; //VARIABLE C
+    C = A + B;
+
+    System.out.println("La suma es: " + C);
+    }
+}

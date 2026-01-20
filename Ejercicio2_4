@@ -1,0 +1,32 @@
+/*Usar constantes y operadores
+
+Crea un programa que calcule el área y perímetro de un círculo:
+- Usa una constante para PI (3.14159)
+- Lee el radio desde el teclado
+- Calcula y muestra área y perímetro
+
+**Fórmulas:**
+- Área = π × r²
+- Perímetro = 2 × π × r*/
+
+import java.util.Scanner;           
+
+public class Ejercicio2_4 {
+
+    public static void main(String[] args) {
+        
+        final double PI = 3.14159; 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Escribir el radio del circulo: ");
+        double radio = scanner.nextDouble();
+
+        double area = PI * Math.pow(radio, 2); 
+        double perimetro = 2 * PI * radio;      
+
+        System.out.println("Area del circulo: " + area);
+        System.out.println("Perimetro del circulo: " + perimetro);
+
+        scanner.close();
+    }
+}

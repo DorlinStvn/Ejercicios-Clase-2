@@ -1,0 +1,35 @@
+/*Practicar la declaración de variables
+
+Declara variables de cada tipo primitivo y muestra sus valores:
+- `byte` (ejemplo: 127)
+- `short` (ejemplo: 32000)
+- `int` (ejemplo: 100000)
+- `long` (ejemplo: 1000000L)
+- `float` (ejemplo: 3.14f)
+- `double` (ejemplo: 3.141592)
+- `char` (ejemplo: 'A')
+- `boolean` (ejemplo: true)*/
+
+public class Ejercicio1_5 { 
+
+    public static void main(String[] args) {
+        
+        byte byteVa = 127;
+        short shortVa = 32767;
+        int intVar = 2147483647;
+        long longVa = 9223372036854775807L;
+        float floatVa = 3.14f;
+        double doubleVa = 3.141592;
+        char charVa = 'amen';
+        boolean booleanVa = true;
+
+        System.out.println("byte: " + byteVar);
+        System.out.println("short: " + shortVar);
+        System.out.println("int: " + intVar);
+        System.out.println("long: " + longVar);
+        System.out.println("float: " + floatVar);
+        System.out.println("double: " + doubleVar);
+        System.out.println("char: " + charVar);
+        System.out.println("boolean: " + booleanVar);
+    }
+}

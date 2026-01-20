@@ -1,0 +1,46 @@
+/*scribe un programa que convierta temperatura de Celsius a Fahrenheit y viceversa.
+
+**Fórmulas:**
+- F = (C × 9/5) + 32
+- C = (F - 32) × 5/9
+
+El usuario debe poder elegir qué conversión hacer.*/
+
+import java.util.Scanner;
+
+
+public class Ejercicio2_3 {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Elija la conversión:");
+        System.out.println("1 para Celsius a fahrenheit");
+        System.out.println("2 para Fahrenheit a celsius");
+        System.out.print("Escribir 1 o 2: ");
+        int opcion = scanner.nextInt();
+
+        if (opcion == 1) 
+        {
+            System.out.print("Escribir temperatura en celsius: ");
+            double celsius = scanner.nextDouble();
+            double fahrenheit = (celsius * 9/5) + 32;
+            System.out.println(celsius + "°C son " + fahrenheit + "°F");
+        } 
+
+        else if (opcion == 2) 
+        {
+            System.out.print("Escrbir temperatura en fahrenheit: ");
+            double fahrenheit = scanner.nextDouble();
+            double celsius = (fahrenheit - 32) * 5/9;
+            System.out.println(fahrenheit + "°F son " + celsius + "°C");
+        } 
+        
+        else 
+        {
+            System.out.println("Eleccion no permitida.");
+        }
+
+        scanner.close();
+    }
+}

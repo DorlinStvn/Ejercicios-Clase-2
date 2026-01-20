@@ -1,0 +1,26 @@
+/*Dominar el bucle for
+
+Escribe un programa que genere la tabla de multiplicar
+ (del 1 al 10) de un número ingresado por el usuario.  */
+
+import java.util.Scanner;
+
+public class Ejercicio3_3 {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Escriba un num del 1 al 10: ");
+        int numero = scanner.nextInt();
+
+        System.out.println("Tabla de multiplicar del " + numero + ":");
+
+        for (int i = 1; i <= 10; i++) 
+        {
+            int resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado);
+        }
+
+        scanner.close();
+    }
+}

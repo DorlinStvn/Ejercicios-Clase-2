@@ -1,0 +1,14 @@
+/*Crea un programa que calcule y muestre el área de un rectángulo
+con base = 5 y altura = 10.*/
+
+public class Ejercicio1_4 {
+
+    public static void main(String[] args) {
+        
+        int base = 5;
+        int altura = 10;
+        int area = base * altura;
+
+        System.out.println("El area es: " + area);
+    }
+}
